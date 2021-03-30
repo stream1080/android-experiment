@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF"
+        android:textSize="30sp"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="One"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_1"
+        android:text="Two"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_2"
+        android:background="@drawable/background_btn3"
+        android:backgroundTint="#9C27B0"
+        android:text="Three"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_3"
+        android:background="@drawable/background_btn4"
+        android:text="Four"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_4"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_btn5"
+        android:text="Five"
+        android:textAllCaps="false"
+        android:onClick="btn5"
+        android:textSize="28sp" />
+
+</RelativeLayout>

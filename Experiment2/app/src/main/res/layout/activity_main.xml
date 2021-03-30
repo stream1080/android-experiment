@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/import_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="进口专区"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/import_text"
+        android:layout_centerVertical="true"
+        android:text="果蔬生鲜"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/import_text"
+        android:layout_centerVertical="true"
+        android:text="全部分类"
+        android:textSize="26sp"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/import_text"
+        android:background="@drawable/background_view1"
+        android:layout_margin="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/import_text"
+        android:layout_margin="20dp">
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/v2"
+            android:background="@drawable/background_view1"
+            android:backgroundTint="#2196F3"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/v2">
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/v3"
+                android:background="@drawable/background_view1"
+                android:backgroundTint="#199A1E"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v3"
+                android:background="@drawable/background_view1"
+                android:backgroundTint="#FFEB3B"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
