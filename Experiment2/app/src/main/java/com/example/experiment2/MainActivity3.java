@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity3 extends AppCompatActivity {
-    private static final String TAG = "";
     private MyButton myButton;
 
     @Override

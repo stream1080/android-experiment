@@ -17,7 +17,6 @@ public class MyButton extends AppCompatButton {
     public MyButton(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
-
     //先执行
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -27,10 +26,7 @@ public class MyButton extends AppCompatButton {
     //后执行
     @Override
     protected void onFocusChanged(boolean focused, int direction, Rect previouslyFocusedRect) {
-        String suffix = "选中";
-        String text = getText().toString();
-        Log.i(TAG, "onFocusChanged: ");
         super.onFocusChanged(focused, direction, previouslyFocusedRect);
+        Log.i(TAG, "onFocusChanged: ");
     }
-
 }
