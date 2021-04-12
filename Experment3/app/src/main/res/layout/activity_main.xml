@@ -102,7 +102,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="boy"
-                android:button="@mipmap/radio_checked"
+                android:button="@drawable/button_radio"
                 android:background="@drawable/background_radio_button"
                 android:paddingVertical="5dp"
                 android:textSize="30sp"/>
@@ -113,7 +113,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="girl"
-                android:button="@mipmap/radio_unchecked"
+                android:button="@drawable/button_radio"
                 android:background="@drawable/background_radio_button"
                 android:paddingVertical="5dp"
                 android:textSize="30sp"/>
@@ -138,6 +138,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="篮球"
+            android:button="@drawable/button_check_1"
             android:textSize="30sp"/>
 
         <CheckBox
@@ -145,6 +146,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="舞蹈"
+            android:button="@drawable/button_check_1"
             android:textSize="30sp"/>
 
         <CheckBox

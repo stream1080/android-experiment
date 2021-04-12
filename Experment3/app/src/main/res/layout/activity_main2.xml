@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/img_car"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/bm_car" />
+
+    <RadioGroup
+        android:id="@+id/bt_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/bt_bm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="宝马"
+            android:gravity="center"
+            android:drawableTop="@mipmap/bm_btn"
+            android:button="@null"
+            android:paddingVertical="5dp"
+            android:textSize="30sp"/>
+
+        <RadioButton
+            android:id="@+id/bt_bk"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="别克"
+            android:gravity="center"
+            android:drawableTop="@mipmap/bk_btn"
+            android:button="@null"
+            android:paddingVertical="5dp"
+            android:textSize="30sp"/>
+
+        <RadioButton
+            android:id="@+id/bt_bsj"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="保时捷"
+            android:gravity="center"
+            android:drawableTop="@mipmap/bsj_btn"
+            android:button="@null"
+            android:paddingVertical="5dp"
+            android:textSize="30sp"/>
+
+        <RadioButton
+            android:id="@+id/bt_bc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="奔驰"
+            android:gravity="center"
+            android:drawableTop="@mipmap/bc_btn"
+            android:button="@null"
+            android:paddingVertical="5dp"
+            android:textSize="30sp"/>
+
+    </RadioGroup>
+
+</LinearLayout>
