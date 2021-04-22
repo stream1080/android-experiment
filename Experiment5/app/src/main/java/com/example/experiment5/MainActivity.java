@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         mLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this,mPhotoList.get(position).getTitle(),Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,mPhotoList.get(position).getContent(),Toast.LENGTH_LONG).show();
             }
         });
 
