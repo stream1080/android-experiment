@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.google.android.material.tabs.TabLayout;
@@ -51,12 +52,9 @@ public class MainActivity extends AppCompatActivity {
             TabLayout.Tab tab = mTabs.getTabAt(i);
             tab.setCustomView(R.layout.tab_item);
             View view = tab.getCustomView();
-            ImageView titleIcon = view.findViewById(R.id.item_tab_iv);
-            ImageView imageView = view.findViewById(R.id.item_iv);
+            ImageView titleIcon = view.findViewById(R.id.item_iv);
             TextView textView = view.findViewById(R.id.item_tv);
-
             titleIcon.setImageResource(mList.get(i).getTitleIcon());
-            imageView.setImageResource(mList.get(i).getImageId());
             textView.setText(mList.get(i).getTitle());
         }
 

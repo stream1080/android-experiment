@@ -16,18 +16,15 @@ public class MyFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.tab_item,container,false);
-        ImageView titleIcon = view.findViewById(R.id.item_tab_iv);
-        ImageView imageView = view.findViewById(R.id.item_iv);
-        TextView textView = view.findViewById(R.id.item_tv);
+        View view = inflater.inflate(R.layout.fraggment_my,container,false);
+        TextView textView = view.findViewById(R.id.fg_tv);
+        ImageView imageView = view.findViewById(R.id.fg_iv);
 
         if (getArguments() != null) {
             Flower flower = getArguments().getParcelable("flower");
             textView.setText(flower.getTitle());
-            titleIcon.setImageResource(flower.getTitleIcon());
             imageView.setImageResource(flower.getImageId());
         }
-
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return view;
     }
 }

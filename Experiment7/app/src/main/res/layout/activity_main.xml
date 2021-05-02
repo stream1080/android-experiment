@@ -7,17 +7,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_id"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         app:tabIndicatorFullWidth="true"
         app:tabIndicatorColor="#2196F3"
         app:tabSelectedTextColor="#f00"/>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/vp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+
 
 </LinearLayout>
