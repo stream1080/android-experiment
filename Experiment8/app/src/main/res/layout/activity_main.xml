@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="学信网用户协议"
+        android:background="#2196F3"
+        android:textColor="#fff"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="学信网用户协议"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingHorizontal="30dp"
+        android:text="       欢迎您使用中国高等教育学生信息网（以下简称学信网、我们或本网站）。本网站由全国高等学校学生信息咨询与就业指导中心（简称中心或我们）所有和运营。您应当仔细阅读、充分理解《用户协议》和《隐私政策》（简称本协议）的全部内容。"
+        android:textSize="24sp"/>
+
+    <CheckBox
+        android:id="@+id/ck_consent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:text=" 同意学信网用户协议"
+        android:textSize="28sp"/>
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="进入系统"
+        android:backgroundTint="#75CCF4"
+        android:textSize="40dp"/>
+
+</LinearLayout>
