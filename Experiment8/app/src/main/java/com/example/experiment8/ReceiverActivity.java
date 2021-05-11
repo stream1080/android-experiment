@@ -29,16 +29,16 @@ public class ReceiverActivity extends AppCompatActivity {
 
         localBroadcastManager = LocalBroadcastManager.getInstance(ReceiverActivity.this);
 
+        //注册本地广播
         myDynamicReceiver = new MyDynamicReceiver();
         IntentFilter intentFilter = new IntentFilter();
-        intentFilter.addAction("new Dynamic Broad");
-
+        intentFilter.addAction("Dynamic Broad");
         localBroadcastManager.registerReceiver(myDynamicReceiver,intentFilter);
 
         btn_deal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ReceiverActivity.this,MainActivity.class);
+                Intent intent = new Intent(ReceiverActivity.this, ProtocolActivity.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +49,20 @@ public class ReceiverActivity extends AppCompatActivity {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            tv_receiver.setText(intent.getStringExtra("consent"));
+            if(intent.getBooleanExtra("consent",false)){
+                tv_receiver.setText("已同意用户协议");
+            }else{
+                tv_receiver.setText("未同意用户协议");
+            }
         }
+    }
+
+    /**
+     * 销毁广播
+     */
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(myDynamicReceiver);
     }
 }

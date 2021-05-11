@@ -9,14 +9,17 @@
 
     <TextView
         android:id="@+id/tv_receiver"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"/>
 
     <Button
         android:id="@+id/btn_deal"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#00BCD4"
         android:textSize="30sp"
         android:text="用户协议"/>
 
